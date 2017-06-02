@@ -1,0 +1,610 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Tercera Aplicacion</title>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/app8.css">
+  <link rel="stylesheet"  href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet"  href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+ </head>
+
+ <body onLoad="MM_preloadImages('imagenes/dia mundial de la tierra 1.jpg','imagenes/dia de la biodivercidad 3.jpg','imagenes/conciencia ecologica 4.jpg','imagenes/conciencia ecologica 3.jpg','imagenes/conciencia ecologica 5.jpg')"> 
+ 
+ 
+    <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-black-btn-txt="Regresar" data-back-btn-theme="b">
+     <h1>Cuidemos el Planeta</h1>
+ </div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/dia_mundial_de_la_tierra_1.jpg" alt="dia mundial de la tierra 1" title="dia mundial de la tierra 1" id="wows1_0"/></li>
+		<li><img src="data1/images/dia_de_la_biodivercidad_1.png" alt="dia de la biodivercidad 1" title="dia de la biodivercidad 1" id="wows1_1"/></li>
+		<li><img src="data1/images/dia_de_la_biodivercidad_4.jpg" alt="dia de la biodivercidad 4" title="dia de la biodivercidad 4" id="wows1_2"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra_2.jpg" alt="dia mundial de la tierra 2" title="dia mundial de la tierra 2" id="wows1_3"/></li>
+		<li><img src="data1/images/dia_mundial_de_la_tierra_3.png" alt="dia mundial de la tierra 3" title="dia mundial de la tierra 3" id="wows1_4"/></li>
+		<li><img src="data1/images/conciencia_ecologica_1.jpg" alt="conciencia ecologica 1" title="conciencia ecologica 1" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/conciencia_ecologica_2.png" alt="wow slider" title="conciencia ecologica 2" id="wows1_6"/></a></li>
+		<li><img src="data1/images/conciencia_ecologica_4.jpg" alt="conciencia ecologica 4" title="conciencia ecologica 4" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="dia mundial de la tierra 1"><span><img src="data1/tooltips/dia_mundial_de_la_tierra_1.jpg" alt="dia mundial de la tierra 1"/>1</span></a>
+		<a href="#" title="dia de la biodivercidad 1"><span><img src="data1/tooltips/dia_de_la_biodivercidad_1.png" alt="dia de la biodivercidad 1"/>2</span></a>
+		<a href="#" title="dia de la biodivercidad 4"><span><img src="data1/tooltips/dia_de_la_biodivercidad_4.jpg" alt="dia de la biodivercidad 4"/>3</span></a>
+		<a href="#" title="dia mundial de la tierra 2"><span><img src="data1/tooltips/dia_mundial_de_la_tierra_2.jpg" alt="dia mundial de la tierra 2"/>4</span></a>
+		<a href="#" title="dia mundial de la tierra 3"><span><img src="data1/tooltips/dia_mundial_de_la_tierra_3.png" alt="dia mundial de la tierra 3"/>5</span></a>
+		<a href="#" title="conciencia ecologica 1"><span><img src="data1/tooltips/conciencia_ecologica_1.jpg" alt="conciencia ecologica 1"/>6</span></a>
+		<a href="#" title="conciencia ecologica 2"><span><img src="data1/tooltips/conciencia_ecologica_2.png" alt="conciencia ecologica 2"/>7</span></a>
+		<a href="#" title="conciencia ecologica 4"><span><img src="data1/tooltips/conciencia_ecologica_4.jpg" alt="conciencia ecologica 4"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+ <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Día de la Tierra</h1>
+       <div>
+        <p>22 de Abril</p>
+       </div>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('1','','imagenes/dia mundial de la tierra 1.jpg',1)"><img src="imagenes/dia mundial de la tierra 2.jpg" width="400" height="auto" id="1"></a> </div>
+     </div>
+ </div>
+    
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Día de la Biodiversidad</h1>
+       <div>
+        <p>22 de Mayo</p>
+       </div>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('2','','imagenes/dia de la biodivercidad 3.jpg',1)"><img src="imagenes/dia de la biodivercidad 2.jpg" width="259" height="194" id="2"></a> </div>
+  </div>
+ </div>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Conciencia Ecológica </h1>
+       <div>
+        <p></p>
+       </div>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('3','','imagenes/conciencia ecologica 4.jpg',1)"><img src="imagenes/conciencia ecologica 3.jpg" width="500" height="250" id="3"></a> </div>
+       </div>
+ </div>
+    <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Día Mundial de la Tierra</h2>
+        <p>¿Por qué se celebra?	</p>
+       </a>
+     </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Alfabetización medioambiental y climática</h2>
+        <p>¿Qué significa?</p>
+       </a>
+     </li>
+     
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Día Internacional de la Biodiversidad</h2>
+        <p>¿Por qué se dio a origen?</p>
+       </a>
+     </li>
+         <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Diversidad biológica para el desarrollo sostenible</h2>
+        <p>El destino de la humanidad depende de la diversidad biológica</p>
+       </a>
+     </li>
+     
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>La Diversidad Biológica Forestal</h2>
+        <p></p>
+       </a>
+     </li>
+     
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Conciencia Ecológica </h2>
+        <p>¿Cómo puedo entrar en conciencia?</p>
+       </a>
+     </li>
+        <li class="ui-first-child ui-last-child">
+       <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Calentamiento global</h2>
+        <p>La comprensión científica del calentamiento global ha ido en aumento</p>
+       </a>
+     </li>
+        
+        <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Datos del Diseñador </h2>
+        <p>=D!!!!</p>
+       </a>
+     </li>
+     </ul>
+    </div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/calentamiento_global2.jpg" alt="calentamiento global2" title="calentamiento global2" id="wows2_0"/></li>
+		<li><img src="data2/images/alfabetizacin_medioambiental_2.jpg" alt="alfabetización medioambiental 2" title="alfabetización medioambiental 2" id="wows2_1"/></li>
+		<li><img src="data2/images/alfabetizacin_medioambiental_1.jpg" alt="alfabetización medioambiental 1" title="alfabetización medioambiental 1" id="wows2_2"/></li>
+		<li><img src="data2/images/dibercidad_biologica_1.jpg" alt="Dibercidad biologica 1" title="Dibercidad biologica 1" id="wows2_3"/></li>
+		<li><img src="data2/images/divercida_biologica_forestal_3.jpg" alt="divercida biologica forestal 3" title="divercida biologica forestal 3" id="wows2_4"/></li>
+		<li><img src="data2/images/divercidad_biologica_forestal_2.png" alt="divercidad biologica forestal 2" title="divercidad biologica forestal 2" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/images1.jpg" alt="slider" title="images1" id="wows2_6"/></a></li>
+		<li><img src="data2/images/images2.jpg" alt="images2" title="images2" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="calentamiento global2"><span><img src="data2/tooltips/calentamiento_global2.jpg" alt="calentamiento global2"/>1</span></a>
+		<a href="#" title="alfabetización medioambiental 2"><span><img src="data2/tooltips/alfabetizacin_medioambiental_2.jpg" alt="alfabetización medioambiental 2"/>2</span></a>
+		<a href="#" title="alfabetización medioambiental 1"><span><img src="data2/tooltips/alfabetizacin_medioambiental_1.jpg" alt="alfabetización medioambiental 1"/>3</span></a>
+		<a href="#" title="Dibercidad biologica 1"><span><img src="data2/tooltips/dibercidad_biologica_1.jpg" alt="Dibercidad biologica 1"/>4</span></a>
+		<a href="#" title="divercida biologica forestal 3"><span><img src="data2/tooltips/divercida_biologica_forestal_3.jpg" alt="divercida biologica forestal 3"/>5</span></a>
+		<a href="#" title="divercidad biologica forestal 2"><span><img src="data2/tooltips/divercidad_biologica_forestal_2.png" alt="divercidad biologica forestal 2"/>6</span></a>
+		<a href="#" title="images1"><span><img src="data2/tooltips/images1.jpg" alt="images1"/>7</span></a>
+		<a href="#" title="images2"><span><img src="data2/tooltips/images2.jpg" alt="images2"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">cssslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    
+ 
+    
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+ </div>
+     
+     
+      
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Día Mundial de la Tierra</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+       <p>Celebramos el Día Internacional de la Madre Tierra para recordar que el planeta y sus ecosistemas nos dan la vida y el sustento.
+
+Con esta celebración admitimos la responsabilidad colectiva, como nos recordaba la Declaración de Río de 1992, de fomentar la harmonía con la naturaleza y la Madre Tierra para alcanzar el equilibrio justo entre las necesidades económicas, sociales y medioambientales de las generaciones presentes y futuras.
+
+Este día nos brinda la oportunidad de concienciar a todos los habitantes del planeta acerca de los problemas que afectan a la Tierra y a las diferentes formas de vida que en él se desarrollan.</p>
+<p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</p>
+       <img src="imagenes/dia mundial de la tierra 1.jpg" width="600" height="auto">
+       <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Día de la Tierra</h1>
+       <div>
+        <p>22 de Mayo</p>
+       </div>
+       <div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('5','','imagenes/dia mundial de la tierra 2.jpg',0)"><img src="imagenes/dia mundial de la tierra 3.png" width="500" height="307" id="5"></a></div>
+  </div>
+ </div>
+   </center>
+   
+      <div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="https://es.wikipedia.org/wiki/D%C3%ADa_de_la_Tierra" data-role="button">
+         <h2>Fuente</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+         
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+        <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+     </div>
+     
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Alfabetización medioambiental y climática</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+       <p><center>El nacimiento de esta celebración es gracias a Gaylord Nelson, senador nacional estadounidense, por el Estado Wisconsin que instauró ése día para crear conciencia sobre los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad, entre otras preocupaciones ambientales para proteger la Tierra.
+
+Del mismo modo, en la Declaración de Río de 1992, se expuso la necesidad de fomentar la armonía con la naturaleza y la Madre Tierra para alcanzar el equilibrio justo entre las necesidades económicas, sociales y medioambientales de las generaciones presentes y futuras.
+
+Fue hasta 2009, que la Asamblea General de la ONU designó al 22 de abril como el Día Internacional de la Madre Tierra para “crear conciencia” sobre el medio ambiente. A partir de esa fecha, la Asamblea General de la ONU, elige un tema de concientización. Este 2017, la campaña se denomina 'Alfabetización medioambiental y climática', esto quiere decir, la educación como parte fundamental de los cimientos del progreso.
+
+Es innegable el papel que tiene la educación en cualquier ámbito, pero en el ambiental se debe considerar como un cimiento de una sociedad que busca el progreso así como el bienestar de cada uno de sus integrantes, razón por la que a través de esta reflexión que se busca generar los cambios actitudinales y transformaciones socioculturales que permita vivir en armonía con el medio ambiente.
+
+De acuerdo con Naciones Unidas, “necesitamos que la ciudadanía mundial conozca los conceptos sobre el cambio climático y sea consciente de la amenaza sin precedentes para el planeta”.
+
+El desafío que tiene la comunidad internacional es no sólo informar de las consecuencias del descuido ambiental, o las amenazas que representa para sostenibilidad a nivel social, económico y ecológico, más bien se trata de apuntar hacia el  involucramiento social.
+
+Es a través del empoderamiento necesario que la sociedad podrá producir los cambios en favor de un ambiente más saludable y sostenible; estratégico para consolidar un Desarrollo Sostenible Nacional sustentado en el desarrollo de tecnologías y empleos respetuosos con el medio ambiente.
+
+De acuerdo con el IPCC (por sus siglas en inglés El Panel Intergubernamental sobre el Cambio Climático), si no se hace nada, y el mundo avanza en su curso actual, estaríamos hablando de un  aumento de temperatura global en promedio de cuatro grados centígrados al final de este siglo.</center><br>
+</p>  
+<center>
+   <img src="imagenes/alfabetización medioambiental 1.jpg" width="400" height="auto">
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Alfabetización medioambiental y climática</h1>
+       <div>
+        <p>Tema del 2017</p>
+       </div>
+       <div>
+         <img src="imagenes/alfabetización medioambiental 2.jpg" width="696" height="469"></div>
+  </div>
+ </div>
+</center>
+
+<div data-role="main" class="ui-content" align="center">
+    <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="http://mexico.corresponsables.com/actualidad/medio-ambiente/alfabetizacion-medioambiental-climatica" data-role="button">
+         <h2>Fuente</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+         
+         
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+     </div>
+     
+     
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Día Internacional de la Biodiversidad</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+       <p><center>Biodiversidad y turismo sostenible</center><br>
+La diversidad de especies, ecosistemas y paisajes atrae al turismo y fomenta el crecimiento económico. A su vez, un sector turístico bien gestionado contribuye de manera significativa a proteger la flora y la fauna, incluso a aumentar las poblaciones de determinadas especies claves, además de concienciar acerca del valor de la biodiversidad a través de los ingresos que genera el turismo.<br>
+La celebración del Día Internacional para la Diversidad Biológica nos brinda la oportunidad de resaltar los beneficios que el turismo sostenible tiene para el crecimiento económico, así como para la conservación y el uso sostenible de la biodiversidad.<br>
+Este vínculo entre biodiversidad y turismo sostenible coincide con la declaración de 2017 como el Año Internacional del Turismo Sostenible para el Desarrollo.</p>
+<p><center>¿Por qué un Día Internacional para la Diversidad Biológica?</center><br>
+Si bien cada vez somos más conscientes de que la diversidad biológica en un bien mundial de gran valor para las generaciones presentes y futuras, el número de especies disminuye a un gran ritmo debido a la actividad humana.<br>
+La Convenio sobre la Diversidad Biológica   es el instrumento internacional para «la conservación de la diversidad biológica, la utilización sostenible de sus componentes y la participación justa y equitativa en los beneficios que se deriven de la utilización de los recursos genéticos», que ha sido ratificado por 196 países.<br>
+Dada la importancia de la educación y la conciencia públicas para la aplicación del Convenio a todos los niveles, la Asamblea General proclamó el 22 de mayo, fecha de la aprobación del texto, Día Internacional de la Diversidad Biológica, mediante la resolución 55/201   de 20 de diciembre de 2000.</p>  
+
+<center>
+<img src="imagenes/dia de la biodivercidad 4.jpg" width="600" height="225">   
+
+
+   
+       <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Día Internacional de la Biodiversidad</h1>
+       <div>
+        <p></p>
+       </div>
+       <div>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('4','','imagenes/conciencia ecologica 3.jpg',1)"><img src="imagenes/conciencia ecologica 2.png" width="500" height="auto" id="4"></a> </div>
+  </div>
+ </div>
+<div data-role="main" class="ui-content" align="center">
+    <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="http://www.un.org/es/events/biodiversityday/" data-role="button">
+         <h2>Fuente</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+         
+         
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+     </div>
+      
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Diversidad biológica para el desarrollo sostenible</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+       <p><center>El lema de este año refleja la importancia de los esfuerzos encaminados a incluir unos Objetivos de Desarrollo Sostenible en la agenda de las Naciones Unidas para después de 2015.
+El destino de la humanidad depende de la diversidad biológica, de la riqueza y variedad de los seres vivos del planeta. Es esencial para el desarrollo sostenible y para el bienestar de los humanos, y clave para reducir la pobreza.
+Más de 3000 millones de personas dependen de la biodiversidad marina y de los litorales para subsistir y otros 1600 millones dependen de los bosques. La degradación de nuestro planeta y la pérdida de biodiversidad amenazan el sustento de más de 1000 millones de personas que viven en zonas secas y subhúmedas.
+Por todo ello, es importante que las estrategias para la protección de la biodiversidad también incluyan medidas para la protección de la pobreza y la promoción de un desarrollo sostenible.
+</center>
+</p>
+      <center>
+        <img src="imagenes/Dibercidad biologica 1.jpg" width="300" height="200">
+   </center>
+ 
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Diversidad biológica para el desarrollo sostenible</h1>
+       <div>
+        <p>Tema del 2016</p>
+       </div>
+       <div>
+        <img src="imagenes/Diversidad biológica para el desarrollo sostenible2.jpg" width="400" height="auto"> </div>
+  </div>
+ </div>
+ </center>
+<div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="http://www.un.org/es/events/biodiversityday/2015/" data-role="button">
+         <h2>Fuente</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+        <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+     </div>
+     
+      
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Conciencia Ecológica </h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+       <p><center>¿Qué es la conciencia ecológica?.</center><br>A partir del momento en que el hombre comenzó a apropiarse de la naturaleza para darle forma a sus necesidades y caprichos, los ecosistemas de todo el planeta dieron su respuesta ante este tipo de abusos, a través de consecuencias negativas como la contaminación y la pérdida de biodiversidad.
+
+Hoy en día podemos conocer, a través de los medios de comunicación, todas las noticias referentes al cambio climático. Pero ante la inevitable realidad ¿cuántos de nosotros nos sentimos responsables y actuamos en consecuencia por los daños que estamos causando al planeta?
+
+
+Justamente, tener conciencia ecológica es entender que somos dependientes de la naturaleza y responsables por su estado de conservación. Ignorar esta verdad equivale a autodestruirnos, porque al degradar el medio ambiente estamos empeorando nuestra calidad de vida y poniendo en peligro el futuro de nuestros descendientes.
+
+Al contrario de lo que se podría pensar, desarrollo económico y conciencia ecológica no tienen por qué ser antónimos. Se puede producir de manera sustentable, fomentar la generación de energías limpias, reducir y reciclar la basura y reutilizar un gran número de materiales que producirán nuevos productos útiles para el día a día del hombre moderno.
+
+Es cierto que la conciencia ecológica debe comenzar en el seno del hogar, pero debe extenderse a todos los ámbitos de nuestra existencia: simplemente porque todas nuestras acciones inciden de manera positiva o negativa sobre la naturaleza.
+
+</p>
+       <img src="imagenes/conciencia ecologica 1.jpeg" width="400" height="auto">
+       <br>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('6','','imagenes/conciencia ecologica 5.jpg',1)"><img src="imagenes/conciencia ecologica 4.jpg" width="300" height="auto" id="6"></a>
+   </center>
+   
+<div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="https://www.ocio.net/estilo-de-vida/ecologismo/que-es-la-conciencia-ecologica/" data-role="button">
+         <h2>Fuente</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+        <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+     </div>
+     
+      <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Datos del Diseñador</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center> 
+        <h1>Nombre Alumno</h1>  
+       <p>Daniel Muñoz Mojica</p>
+         <h1>Grado-grupo</h1>
+             <p>4-E </p>
+             <h1>Submodulo</h1>
+                <p>Desarrolla Aplicaciones Moviles (DAM)</p>
+                  <h1>nombre del docente</h1>
+                      <p>Lic. José Antonio Gómez Hernández</p>
+   
+
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+        <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+     </div>
+       
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>La Diversidad Biológica Forestal</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+       <p>2011 es el Año Internacional de los Bosques y biodiversidad de los bosques es el tema de este año, el Día Internacional de la Diversidad Biológica (BID).
+Designación del BID de 2011 sobre el tema de los bosques proporciona a las Partes en el Convenio sobre la Diversidad Biológica (CDB) y todos los interesados ​​en los bosques, la oportunidad de dar a conocer el problema y aumentar la acción práctica.
+</p>
+      <p><center>El Foro de las Naciones Unidas sobre los Bosques ha, en colaboración con la Secretaría del CDB y otros organismos de la ONU, los Estados miembros y grupos alcalde, comenzó el Premio Héroes forestal y programas para identificar y honrar a las personas dedicadas a promover el manejo forestal sostenible.
+Herramienta TEMATEA sobre los compromisos internacionales relacionados con la biodiversidad forestal a petición de la décima reunión de la Conferencia de las Partes, la Secretaría del CDB está desarrollando un nuevo módulo de bosque en los compromisos internacionales relacionados con la biodiversidad forestal. El módulo apoyará una mejor y más coherente aplicación nacional de los instrumentos internacionales relacionados con los bosques. La campaña será lanzada oficialmente en el Día Internacional de la Diversidad Biológica, el 22 de mayo de 2011.
+Foro Económico Internacional de las Américas, Conferencia de Montreal, 6-9 de 2011 de junio de la Secretaría del Convenio sobre la Diversidad Biológica, en cooperación con el Foro Económico Internacional de las Américas realizará un taller de expertos de 2 días a las inversiones en los servicios de los ecosistemas forestales, incluyendo el papel de la biodiversidad para mitigar los riesgos de inversión. El taller se organizó en el marco del Año Internacional de los Bosques 2011, y el seguimiento al “Día Internacional de la Diversidad Biológica” (BID) el 22 de mayo, que se centra en la biodiversidad forestal. En el mismo contexto, también habrá una mesa redonda en el 17 Foro Internacional Económico de las Américas, Conferencia de Montreal, sobre el tema “La biodiversidad, carbono, agua, y más: La inversión en servicios de los ecosistemas forestales”.
+</center></p> 
+<center>
+<img src="imagenes/divercida biologica forestal 3.jpg" width="400" height="auto">
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Diversidad Biológica Forestal</h1>
+       <div>
+        <p>Tema del 2011</p>
+       </div>
+       <div>
+        <img src="imagenes/divercidad biologica forestal 2.png" width="400" height="auto"> </div>
+  </div>
+ </div>
+ </center>
+<div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="https://www.cbd.int/idb/2011/" data-role="button">
+         <h2>Fuente</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+        <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+     </div>
+           <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Calentamiento global</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+       <p>Calentamiento global y cambio climático se refieren al aumento observado en los últimos siglos de la temperatura del sistema climático de la Tierra y sus efectos. 
+Múltiples líneas de pruebas científicas demuestran que el sistema climático se está calentando.  Aunque a menudo la prensa popular comunica el incremento de la temperatura atmosférica superficial como medición del calentamiento global, la mayor parte de la energía adicional almacenada en el sistema climático desde 1970 se ha usado en calentar los océanos. El resto ha fundido el hielo y calentado los continentes y la atmósfera. Muchos de los cambios observados desde la década de 1950 no tienen precedentes en décadas, aun milenios. 
+La comprensión científica del calentamiento global ha ido en aumento. En su quinto informe (AR5) el Grupo Intergubernamental de Expertos sobre el Cambio Climático (IPCC) señala que en 2014 los científicos estaban más del 95 % seguros de que la mayor parte del calentamiento global es causada por las crecientes concentraciones de gases de efecto invernadero (GEI) y otras actividades humanas. 
+Las proyecciones de modelos climáticos resumidos en el AR5 indicaron que durante el presente siglo la temperatura superficial global subirá probablemente 0,3 a 1,7 °C para su escenario de emisiones más bajas usando mitigación estricta y 2,6 a 4,8 °C para las mayores. Estas conclusiones han sido respaldadas por las academias nacionales de ciencia de los principales países industrializados y no son disputadas por ninguna organización científica de prestigio nacional o internacional. 
+</p>
+       <img src="imagenes/calentamiento global1.jpg" width="600" height="400">
+       <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Calentamiento global</h1>
+       <div>
+        <p></p>
+       </div>
+       <div>
+        <img src="imagenes/calentamiento global2.jpg" width="400" height="auto"> </div>
+  </div>
+ </div>
+      </center>
+   <div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="https://es.wikipedia.org/wiki/Calentamiento_global" data-role="button">
+         <h2>Fuente</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+        <h4>Aplicacion Ecológica </h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+     </div>
+       
+</body>
+</html>
+
